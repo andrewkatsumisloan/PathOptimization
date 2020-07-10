@@ -1,13 +1,11 @@
 // ExpandableHashMap.h
 
-// Skeleton for the ExpandableHashMap class template.  You must implement the first six
-// member functions.
+// Must implement the first six member functions
 
 #include <list>
 #include <vector>
 
 using namespace std;
-
 
 template<typename KeyType, typename ValueType>
 class ExpandableHashMap
@@ -40,8 +38,7 @@ private:
     vector< list<pair <const KeyType*, const ValueType*> > *> m_buckets;
 };
 
-// This is just the constructor for the ExpandableHashMap class, which takes just the load factor.  WE ARE IMPLEMENTING AN OPEN HASH TABLE.
-// Seems to clearly imply that the data structure to use is a Hash map
+// This is just the constructor for the ExpandableHashMap class, which takes just the load factor.  IMPLEMENTING AN OPEN HASH TABLE.
 // A newly constructed ExpandableHashMap must have 8 buckets and no associations
 // Default maximumLoadFactor is 0.5
 // There must be at most one mapping for a unique key, if there is a second association, it must overwrite the previous one.
